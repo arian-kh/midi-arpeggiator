@@ -3,16 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Midi Arp</title>
+  <title>Spinning Plates</title>
+  <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Midi Arpeggiator</h1>
-  <button onclick="start()">Start</button>
-  <button onclick="stop()">Stop</button>
-  <h2>Input</h2>
+  <h1>Spinning Plates</h1>
+  <h2>Javascript Midi Arpeggiator</h2>
+  <div class="controls">
+    <button onclick="start()">►</button>
+    <button onclick="stop()" class="stop">■</button>
+  </div>
+  <!-- <h2>Input</h2>
   <select></select>
   <h2>Output</h2>
-  <select></select>
+  <select></select> -->
+  <div id="plates-container"></div>
+  <!-- <script type="text/javascript" src="main.js"></script> -->
 </body>
 </html>

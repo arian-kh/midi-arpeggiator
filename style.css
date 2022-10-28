@@ -1,0 +1,48 @@
+body {
+  font-family: Arial;
+  font-size: 22px;
+  color: #222222;
+}
+
+.controls {
+  display: flex;
+}
+
+button {
+  font-size: 22px;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+button.stop {
+  font-size: 28px;
+}
+
+#plates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.arp {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  border: 1px solid #222;
+}
+
+.arp.muted .note {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.note {
+  padding: 10px;
+  /*transition: background-color 0s linear;*/
+}
+
+.note.active {
+  background-color: #f5e342;
+  /*transition: background-color 0.2s ease-out;*/
+}
